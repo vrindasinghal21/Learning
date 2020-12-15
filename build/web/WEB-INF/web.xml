@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	 version="3.1">
+    
+    <!--servlet declaration-->
+    <servlet>
+        <servlet-name>usingServlet</servlet-name>
+        <servlet-class>createServlet.usingServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>usingGeneric</servlet-name>
+        <servlet-class>createServlet.usingGeneric</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>usinghttp</servlet-name>
+        <servlet-class>createServlet.usinghttp</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>usingServlet</servlet-name>
+        <url-pattern>/usingServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>usingGeneric</servlet-name>
+        <url-pattern>/usingGeneric</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>usinghttp</servlet-name>
+        <url-pattern>/usinghttp</url-pattern>
+    </servlet-mapping>
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

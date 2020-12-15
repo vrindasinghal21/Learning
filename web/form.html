@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Student Registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .container{
+                background:inherit;
+                background-color: rgba(255, 255, 255, .15);  
+                /*backdrop-filter: blur(5px);*/
+                width:25%;
+                border-style:inset;
+                border-width:20px;
+                border-radius:5px;
+                margin:auto;
+                padding:45px;
+                font-size: 20px;
+                
+                #myform table tr td input{
+                    font-size:20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="myform" class="container">
+            <h1>Student Registration</h1>
+            <form action="usinghttp" methOd="post">
+                <table>
+                    <tr>
+                        <td>Enter your name:</td>
+                        <td><input type="text" name="name" placeholder="ENTER HERE"/></td>
+                    </tr>
+                    <tr>
+                        <td>Enter your password:</td>
+                        <td><input type="password" name="password" placeholder="ENTER HERE"/></td>
+                    </tr>
+                    <tr>
+                        <td>Enter your email:</td>
+                        <td><input type="email" name="email" placeholder="ENTER HERE"/></td>
+                    </tr>
+                    <tr>
+                        <td>Select your gender:</td>
+                        <td><input type="radio" name="gender" value="male">Male &nbsp;&nbsp;<input type="radio" name="gender" value="female">Female</td>
+                    </tr>
+                    <tr>
+                        <td>Select your course:</td>
+                        <td>
+                            <select name="course">
+                                <option value=""selected disabled hidden>Select</option>
+                                <option value="java">Java</option>
+                                <option value="python">Python</option>
+                                <option value="c++">C++</option>
+                                <option value="ruby">Ruby</option>
+                                <option value="kotlin">Kotlin</option>
+                            </select>    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right">
+                            <input type="checkbox" value="checked" name="condition"/>
+                        </td>
+                        <td>Agree terms and conditions</td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <button type="submit">Register</button>
+                            <button type="reset">Reset</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
